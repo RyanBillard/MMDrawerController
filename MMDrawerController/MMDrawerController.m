@@ -685,10 +685,6 @@ static NSString *MMDrawerOpenSideKey = @"MMDrawerOpenSide";
     return NO;
 }
 
--(BOOL)automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers{
-    return NO;
-}
-
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
@@ -798,10 +794,6 @@ static NSString *MMDrawerOpenSideKey = @"MMDrawerOpenSide";
             [childViewController willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
         }
     }
-}
-
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
-    return YES;
 }
 
 -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
